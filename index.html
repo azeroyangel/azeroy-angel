@@ -1,73 +1,126 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>azeroy angel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=1920">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<body>
 
+    <div class="bg-blur"></div>
 
-<body bgcolor="#000000">
-
-    <div id="enter-overlay" onclick="var m = document.getElementById('bg-music'); m.play(); m.volume = 0.02; this.style.display='none';">
-        <button class="enter-btn">644099498102917605437124448312933929008102917605437124448312933929008102917605437124448312933929008102917605437124448312933929008102917605437124448312933929008102917605437124448312933929008102917605437124448312933929008102917605437
-            810291760543712444831293392900810291760543712444831293392900
-            810291760543712444831293392900810291760543712444831293392900810291760543712444831293392900810291760543712444831293392900810291760543712444831293392900810291760543712444831293392900
-            810291760543712444831293392900810291760543712444831293392900810291760543712444831293392900810291760543712444831293392900810291760543712444831293392900810291760543712444831293392900810291760543712444831293392900
-            810291760543712444831293392900810291760543712444831293392900
-            124448312933929008102917605437124448312933929008102917605437124448312933929008102917605437124448312933929008102917605437124448312933929008102917605437124448312933929008102917605437124448312933929000</button>
-    </div>
-    <audio id="bg-music" loop>
-        <source src="msk/sssssfsd.mp3" type="audio/mpeg">
-    </audio>
-
-
-    
-    <marquee scrollamount="15" class="top-marquee">
-        eto tipo kulaki i eto v yebalo tebe letyat pon⛧⛧⛧⛧⛧⛧⛧⛧⛧⛧⛧
-    </marquee>
-
-    <div class="page-wrapper">
-    <img src="imgs/Yabujin_logo.png" alt="X" class="yabujin-logo">
-    
-    <aside class="side-gallery left-side">
-        <img src="imgs/photo_2026-03-11_15-42-56.jpg">
-        <img src="imgs/gal1.jpg">
-        <img src="imgs/gal2.jpg">
-    </aside>
-
-    <aside class="side-gallery right-side">
-        <img src="imgs/gal3.jpg">
-        <img src="imgs/gal4.jpg">
-        <img src="imgs/galsex.jpg">
-    </aside>
-
-    <main class="main-column">
-        <center>
-            <div class="header-block">
-                <h1 class="top-number">守卫大门的鲸鱼。</h1>
-                <img src="imgs/pidor.jpg" class="mushroom-img">
-                <h2 class="bottom-title">sam ti pidor</h2>
-            </div>
-        </center>
+    <main class="profile-layout">
         
-        <div class="content-block">
-            <p>✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡</p>
-            <p> repchina yebanaya stul taburet ya razob'yu tebe yeblet lozhka otkhod ya yebal tebya <p> 
-            <p> v rot truba kapusta u tebya v karmane pusto malyshka gotovit omlet a vecherom delayet minet pyureshka s kotletkoy ya yebu detku a ved' ona maloletka shkolota podbirayet s pola v tam lezhit moya Motorola pechka vyklyuchatel' musorka okno ya vykhozhu v eto govno yo yo eto dezhurstvo v stolovoy ya seychas obkakayus' ot etogo der'ma der'mo der'mo der'mo direktorsha uyobishche yey muzh ne dayot rozetka taburetka u yeye muzha yebanaya pipetka lestnitsa prolet vsey shkoloy yebali yeye v rot seraya mysh' ne dayot za to tvoya mat' srazu beret v rot yo yo eto shkol'nyy rep Igorok krutoy chuvachok my s nim sidim kurim napasik pod vecherok gomenyuchka zashla v tualet obosralas' i sdelala minet ya yebanul sal'tukhu s okna a tam lezhit shalava ne odna ya yey sel na yeblet i ona zaletela v moment you MS pyureshko i MS taburetko seychas navalivayut eto der'mo begi otsyuda poka ne dali v yeblo my ochen' chetkiye u nas vsya shkola beret za obe shcheki my takiye milyye tipa my khomyaki polnyy samolot lyudey ya yebal yeye detey syn shalavy podmetayet za nami travku chto my rassypali posle lyutoy lavki ya zalez v transformatornuyu budku tam byla moya kuritel'naya trubka idom s pidorami na kakuyu to khuynyu a ya khochu na kolbasu yesli cho eto fil'm takoy tipa ya yebal doch' Fillipa</p>
-        </div>
+        <aside class="sidebar">
+            <div class="user-info">
+                <h1 class="username">azeroy</h1>
+                <span class="user-rank">level$ 4</span>
+                
+                <img src="https://avatars.akamai.steamstatic.com/488e63e473da1099b9518755a35752dfc4725d4e_full.jpg" class="avatar" alt="avatar">
 
-        <div class="roses-group">
-            <img src="imgs/rose.png" class="rose rose-1">
-            <img src="imgs/rose.png" class="rose rose-2">
-            <img src="imgs/rose.png" class="rose rose-3">
-        </div>
-        <div class="pony-group">
-            <img src="imgs/rose.png" class="rose-pony">
-            <img src="imgs/creepy_pony.png" class="pony-img">
-        </div>
+                <span class="status online">* idk</span>
+                <span class="location">location: ^C</span>
+            </div>
+
+            <div class="ads-section">
+                <span class="ads-title">ad</span>
+                <div id="ads-container"></div>
+            </div>
+        </aside>
+
+        <section class="main-content">
+            
+            <header class="profile-header">
+                <h2>welcome to my profile!</h2>
+            </header>
+
+            <article class="block">
+                <h3>abo♥ut ♥ me♥</h3>
+                <p>music lover and half-coder</p>
+                <p>glua c♥der</p>
+                <p>mostly listen to underground music()))</p>
+            </article>
+
+            <article class="block">
+                <h3>skil♥ls</h3>
+                <ul>
+                <li>fluent in photoshop</li>
+                <li>help everyone as much as I can</li>
+                <li>some experience in video editing</li>
+                <li>mostly listen to underground music</li>
+                </ul>
+            </article>
+
+            <article class="block">
+                <h3>contacts</h3>
+                <nav class="contacts">
+                    <a href="https://t.me/azeroyisland" target="_blank"><i class="fa-brands fa-telegram"></i> telegram</a>
+                    <a href="https://soundcloud.com/mwnm" target="_blank"><i class="fa-brands fa-soundcloud"></i> soundcloud</a>
+                    <a href="https://steamcommunity.com/id/azeroyangel/" target="_blank"><i class="fa-brands fa-steam"></i> steam</a>
+                    <a href="https://www.youtube.com/@azeroyangel" target="_blank"><i class="fa-brands fa-youtube"></i> youtub3</a>
+                </nav>
+            </article>
+
+            <footer class="signature">
+                <p>idk what to write kys</p>
+                <div class="roses">
+                    <img src="imgs/rose.png" alt="rose">
+                    <img src="imgs/rose.png" alt="rose">
+                    <img src="imgs/rose.png" alt="rose">
+                    <img src="imgs/rose.png" alt="rose">
+                    <img src="imgs/rose.png" alt="rose">
+                    <img src="imgs/rose.png" alt="rose">
+                    <img src="imgs/rose.png" alt="rose">
+                    <img src="imgs/rose.png" alt="rose">
+                    <img src="imgs/rose.png" alt="rose">
+                    <img src="imgs/rose.png" alt="rose">
+                </div>
+            </footer>
+
+        </section>
+
     </main>
-    </div>
+
+    <script>
+        const ads = [
+            "https://i.pinimg.com/1200x/c2/fc/35/c2fc357334a24fcf08c7aff6ce899afb.jpg",
+            "https://i.pinimg.com/736x/fd/2a/9d/fd2a9dc9949c187708dc26a2d25ef5e7.jpg",
+            "https://i.pinimg.com/736x/63/1a/ef/631aef8db7af87e0e37ee69060028185.jpg",
+            "https://i.pinimg.com/1200x/15/a3/ea/15a3eaf15531297db11313570f1b0153.jpg",
+            "https://i.pinimg.com/736x/42/ae/a0/42aea08ca14eccfe8580d928bdcc2979.jpg",
+            "https://i.pinimg.com/1200x/0c/1f/f8/0c1ff88e0cb2d9ec0caa3547447acb02.jpg",
+            "https://i.pinimg.com/1200x/3b/16/38/3b1638ce469b9fb5f0967bade7d2baed.jpg",
+            "https://i.pinimg.com/736x/a6/54/15/a65415f534c7602e7321c8115c9aba5c.jpg",
+            "https://i.pinimg.com/736x/02/37/f7/0237f7d9188aabb62901d82ae7f4f63c.jpg",
+            "https://i.pinimg.com/1200x/2c/4c/8a/2c4c8ab30f143dfede188f76f0feace7.jpg",
+            "https://i.pinimg.com/1200x/36/dd/06/36dd063f149a12cde23eb546d5813c0e.jpg",
+            "https://i.pinimg.com/736x/7d/12/54/7d12544f361bc5d83c6ad7439a52df48.jpg",
+            "https://i.pinimg.com/1200x/ee/1a/99/ee1a99a2e3ba098c5869c3c05c389533.jpg",
+            "https://i.pinimg.com/1200x/09/ae/03/09ae038089397131775be56ef2d79f82.jpg",
+            "https://i.pinimg.com/736x/9e/4a/2a/9e4a2a6fb0eec892bf186ff2c5280005.jpg",
+            "https://i.pinimg.com/1200x/b7/5c/0b/b75c0b4c38f6173d85e153e0682143d4.jpg",
+            "https://i.pinimg.com/736x/45/7d/df/457ddf9f89231be35ea7071b1a91d189.jpg",
+            "https://i.pinimg.com/736x/09/9d/08/099d084cdd9b7d97b1f3cac8380bad7f.jpg",
+            "https://i.pinimg.com/1200x/c3/d2/07/c3d2077d17c8e0dad74532fa26e6480b.jpg",
+            "https://i.pinimg.com/1200x/30/6a/79/306a79ba57f195281c841d99b41e9b7e.jpg",
+            "https://i.pinimg.com/736x/ff/de/ee/ffdeeeda31a14abafaa3bd11a718488e.jpg",
+            "https://i.pinimg.com/1200x/fe/f4/fd/fef4fd1bdfabadd84e49abfecd3022b2.jpg",
+            "https://i.pinimg.com/1200x/ff/cb/e4/ffcbe418caef23f19d6db809d7048c8f.jpg"
+        ];
+
+        const container = document.getElementById("ads-container");
+        ads.sort(() => 0.5 - Math.random())
+           .slice(0, 3)
+           .forEach(url => {
+               const a = document.createElement("a");
+               a.href = url;
+               a.target = "_blank";
+               a.innerHTML = `<img src="${url}" alt="ad">`;
+               container.appendChild(a);
+           });
+    </script>
+
 </body>
 </html>
