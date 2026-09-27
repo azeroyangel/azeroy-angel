@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
     <title>profile</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,9 +25,9 @@
                 <span class="location">location: ^C</span>
             </div>
 
-            <div class="ads-section">
-                <span class="ads-title">ad</span>
-                <div id="ads-container"></div>
+            <div class="promo-section">
+                <span class="promo-title">ad</span>
+                <div id="promo-container"></div>
             </div>
         </aside>
 
@@ -84,7 +85,7 @@
     </main>
 
     <script>
-        const ads = [
+        const promoImages = [
             "https://i.pinimg.com/1200x/c2/fc/35/c2fc357334a24fcf08c7aff6ce899afb.jpg",
             "https://i.pinimg.com/736x/fd/2a/9d/fd2a9dc9949c187708dc26a2d25ef5e7.jpg",
             "https://i.pinimg.com/736x/63/1a/ef/631aef8db7af87e0e37ee69060028185.jpg",
@@ -110,14 +111,14 @@
             "https://i.pinimg.com/1200x/ff/cb/e4/ffcbe418caef23f19d6db809d7048c8f.jpg"
         ];
 
-        const container = document.getElementById("ads-container");
-        ads.sort(() => 0.5 - Math.random())
+        const container = document.getElementById("promo-container");
+        promoImages.sort(() => 0.5 - Math.random())
            .slice(0, 3)
            .forEach(url => {
                const a = document.createElement("a");
                a.href = url;
                a.target = "_blank";
-               a.innerHTML = `<img src="${url}" alt="ad">`;
+               a.innerHTML = `<img src="${url}" alt="promo">`;
                container.appendChild(a);
            });
     </script>
