@@ -14,20 +14,22 @@ body {
     margin: 0;
     padding: 40px 20px;
     min-height: 100vh;
+    position: relative;
 }
 
 .bg-blur {
     position: fixed;
     inset: 0;
-    background: url('./imgs/back.jpg') no-repeat center/cover;
+    background: url('imgs/back.jpg') no-repeat center/cover;
     filter: blur(4px) brightness(0.3);
-    z-index: -1;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .profile-layout {
-    transform: scale(1.2);
-    transform-origin: top center;
-    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -83,7 +85,8 @@ body {
 }
 
 .promo-section {
-    margin-top: 30px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .promo-title {
@@ -97,12 +100,24 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+#promo-container a {
+    display: block;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    border: 1px solid #333;
 }
 
 #promo-container img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block;
 }
 
 .profile-header h2 {
